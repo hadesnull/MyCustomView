@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="loan_credit_blue">#4FC6FF</color>
+    <color name="loan_blue_light_color">#C8ECFF</color>
+
+    <color name="loan_start_color">#35ffffff</color>
+</resources>

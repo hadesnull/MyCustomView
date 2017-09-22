@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Loan_ColorProgressView">
+        <attr name="corner_pro_int_size" format="dimension" />
+        <attr name="corner_pro_text_size" format="dimension" />
+        <attr name="corner_bg_circle_color" format="color" />
+    </declare-styleable>
+</resources>
