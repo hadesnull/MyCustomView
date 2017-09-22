@@ -48,6 +48,7 @@ public class DetailActivity extends Activity {
 
 
         Toast.makeText(this, "id=="+id, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "id=="+id, Toast.LENGTH_SHORT).show();
         Call<DetailBean> eventBeanCall = service.getDetail("1.0", id);
 
         eventBeanCall.enqueue(new Callback<DetailBean>() {
