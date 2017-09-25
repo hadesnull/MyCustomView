@@ -6,7 +6,15 @@
 
     <com.cai.yi.myapplication0.wight.ColorProgressView
         android:id="@+id/view_pro"
-        android:layout_width="300dp"
-        android:layout_height="300dp" />
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <com.cai.yi.myapplication0.wight.Practice11PieChartView
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <com.cai.yi.myapplication0.wight.ShaderDemoView
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
 
 </LinearLayout>

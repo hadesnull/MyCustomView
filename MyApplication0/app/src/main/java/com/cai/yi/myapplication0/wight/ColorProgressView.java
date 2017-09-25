@@ -111,7 +111,9 @@ public class ColorProgressView extends View {
         canvas.drawArc(rectBlackBg, 0, value, false, mPaint);
         if (currentCount < maxCount && currentCount != 0) {
             /**开始的原点*/
-            canvas.drawCircle(x + mWidth/2, y + mHeight/2, dip2px(getContext(), 3f), mPaint);
+            //canvas.drawCircle(x + mWidth/2, y + mHeight/2, dip2px(getContext(), 3f), mPaint);
+
+            canvas.drawPoint(x + mWidth/2, y + mHeight/2, mPaint);
         }
         canvas.restore();
     }

@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.cai.yi.myapplication0.factory.FactoryBuild;
 import com.cai.yi.myapplication0.view.ColorProActivity;
 import com.cai.yi.myapplication0.view.HistoryDayActivity;
 import com.cai.yi.myapplication0.wight.turntest;
@@ -67,6 +68,14 @@ public class MainActivity extends AppCompatActivity {
                             intent.setClass(MainActivity.this, ColorProActivity.class);
                             startActivity(intent);
                             break;
+
+                        case 4:
+                            FactoryBuild.getEnstance(FactoryBuild.type_1).save();
+                            break;
+
+                        case 5:
+                            FactoryBuild.getEnstance(FactoryBuild.type_2).save();
+                            break;
                         default:
                             break;
                     }
@@ -76,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public int getItemCount() {
-            return 5;
+            return 8;
         }
 
         class MyViewHolder extends RecyclerView.ViewHolder{
