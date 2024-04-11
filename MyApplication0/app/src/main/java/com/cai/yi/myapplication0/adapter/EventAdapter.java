@@ -2,13 +2,14 @@ package com.cai.yi.myapplication0.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.cai.yi.myapplication0.DetailActivity;
@@ -45,9 +46,9 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder
     public void onBindViewHolder(MyViewHolder holder, int position) {
         final EventBean.ResultBean resultBean = mData.get(position);
         holder.mName.setText(resultBean.getTitle());
-        Glide.with(mContext)
-                .load(resultBean.getPic())
-                .into(holder.mImg);
+//        Glide.with(mContext)
+//                .load(resultBean.getPic())
+//                .into(holder.mImg);
         holder.mConvertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

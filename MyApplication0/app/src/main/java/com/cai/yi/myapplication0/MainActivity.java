@@ -1,14 +1,16 @@
 package com.cai.yi.myapplication0;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.cai.yi.myapplication0.factory.FactoryBuild;
 import com.cai.yi.myapplication0.view.ColorProActivity;
@@ -42,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onBindViewHolder(MyViewHolder holder, final int position) {
+        public void onBindViewHolder(MyViewHolder holder, @SuppressLint("RecyclerView") final int position) {
 
             holder.img.setOnClickListener(new View.OnClickListener() {
                 @Override

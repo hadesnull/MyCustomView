@@ -4,12 +4,12 @@ import android.animation.Animator;
 import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
-import android.support.v7.widget.LinearSnapHelper;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.widget.ImageView;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 
 /**
  * Created by qf on 2017/9/21.

@@ -2,7 +2,8 @@ package com.cai.yi.myapplication0.view;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import com.cai.yi.myapplication0.R;
 import com.cai.yi.myapplication0.wight.ColorProgressView;

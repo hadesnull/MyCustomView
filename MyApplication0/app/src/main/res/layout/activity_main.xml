@@ -11,7 +11,7 @@
         android:padding="20dp"
         android:visibility="gone"
         android:layout_height="0dp"
-     />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_name"
@@ -19,15 +19,15 @@
         android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-         />
+        tools:ignore="MissingConstraints" />
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list"
         android:dividerHeight="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
       >
 
-    </android.support.v7.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 
 </android.support.constraint.ConstraintLayout>

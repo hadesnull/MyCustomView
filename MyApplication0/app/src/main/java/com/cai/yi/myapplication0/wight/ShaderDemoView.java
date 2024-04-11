@@ -9,10 +9,10 @@ import android.graphics.ComposeShader;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.Shader;
-import android.support.annotation.Nullable;
-import android.support.constraint.ConstraintLayout;
 import android.util.AttributeSet;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 import com.cai.yi.myapplication0.R;
 

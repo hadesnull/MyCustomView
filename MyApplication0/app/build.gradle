@@ -1,12 +1,21 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    namespace = "com.cai.yi.myapplication0"
+    compileSdk = 34
+
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
     defaultConfig {
         applicationId "com.cai.yi.myapplication0"
-        minSdkVersion 16
-        targetSdkVersion 25
+        minSdkVersion 21
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -27,16 +36,27 @@ repositories {
 
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    testCompile 'junit:junit:4.12'
-    compile 'com.squareup.retrofit2:retrofit:2.0.1'
-    compile 'com.squareup.retrofit2:converter-gson:2.0.1'
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'com.android.support:cardview-v7:25.3.1'
-    compile 'com.android.support:recyclerview-v7:25.0.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+//    testCompile 'junit:junit:4.12'
+
+//    implementation ("com.android.support:appcompat-v7:25.3.1")
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation ("com.android.support.constraint:constraint-layout:1.0.2")
+    implementation ("com.squareup.retrofit2:retrofit:2.0.1")
+    implementation ("com.squareup.retrofit2:converter-gson:2.0.1")
+    implementation ("com.github.bumptech.glide:glide:3.7.0")
+//    implementation ("com.android.support:cardview-v7:25.3.1")
+//    implementation ("com.android.support:recyclerview-v7:25.0.1")
+
+    implementation("androidx.core:core-ktx:1.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+}
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions {
+        languageVersion = "1.8"
+    }
 }

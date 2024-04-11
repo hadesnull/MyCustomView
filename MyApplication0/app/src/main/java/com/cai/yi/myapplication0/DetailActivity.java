@@ -2,11 +2,12 @@ package com.cai.yi.myapplication0;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
 
 import com.bumptech.glide.Glide;
 import com.cai.yi.myapplication0.bean.DetailBean;
@@ -57,9 +58,9 @@ public class DetailActivity extends Activity {
 
                 DetailBean body = response.body();
                 DetailBean.ResultBean resultBean = body.getResult().get(0);
-                Glide.with(DetailActivity.this)
-                        .load(resultBean.getPic())
-                        .into(mImg);
+//                Glide.with(DetailActivity.this)
+//                        .load(resultBean.getPic())
+//                        .into(mImg);
                 mTv.setText(resultBean.getContent());
 
              //   mTv.setText(response.body().toString());
